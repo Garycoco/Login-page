@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: white;
+}
+.container {
+    height: 100vh;
+    background-image: url(./images/bg.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container {
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, .2);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+.input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 999px;
+    display: flex;
+    padding: 10px 20px;
+}
+.input input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+.input span {
+    color: white;
+    fill: white;
+}
+::placeholder {
+    color: white;
+}
+.pass-util {
+    display: flex;
+    font-size: 12px;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+}
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.login {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    border: 0;
+    transition: all .4s ease-in-out;
+}
+.login:hover {
+    background: rgb(240, 127, 127);
+}
+.no-acc {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 716px) {
+    .form-container {
+        margin: 10px;
+    }
+}
